@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html ng-app="App">
+<head lang="en">
+    <meta charset="UTF-8">
+    <link href="style.css" rel="stylesheet">
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+    <script src="main.js"></script>
+    <title></title>
+</head>
+<body ng-controller="MessagingCtrl as message">
+<div></div>
+<div id="done">
+    <h1>Unable to access the network</h1>
+    <button id="reload">Reload</button>
+    <button id="more" ng-click="message.show()">More</button>
+</div>
+<div id="message" ng-show="message.open">
+    <p>Hello</p>
+</div>
+</body>
+</html>
